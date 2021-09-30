@@ -144,7 +144,7 @@
                    <li>
                         
                         <button class="btn btn-primary" type="submit" id="myInput">Enviar</button>
-                        <button class="btn btn-primary" type="submit" id="myInput">Cancelar</button>
+                        <input type="button" onclick="limpiarDatos()" value="Cancelar">
                    </li>
 
                    
@@ -171,6 +171,11 @@
      </div>
    </div>
 <!--fin ventana modal-->
-        <script data-main="js/inicio" src="js/require-jquery.js"></script>       
+        <script data-main="js/inicio" src="js/require-jquery.js"></script>
+        <script>
+          function limpiarDatos() {
+            document.getElementById("formulario").reset();
+          }
+          </script>        
      </body>
 </html>
